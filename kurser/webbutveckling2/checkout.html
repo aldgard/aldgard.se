@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="assets/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="assets/lifestylestore.js"></script>
+	
+		<title>LifeStyleStore.com checkoutpage</title>
+	<meta name="describtion" content="LifeStyleStore is where you will find almost everything you need in the life of a snowboarder">
+</head>
+
+<body>
+
+<!-- navgation section with logo, main menu, cart -->
+<div id="nav_header">
+<header class="checkout">
+	<div class="logo">
+		<a href="index.html"><img src="files/logo.png" class="img_logo" alt="Company Logo"></a>
+	</div>
+	
+	<nav id="navigation">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="index.html#shop">Shop</a></li>
+			<li><a href="index.html#blog">Blog</a></li>
+			<li><a href="index.html#travel">Travel</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+	
+	
+	
+	<div class="checkout-maintitle">
+		<h1>Checkout page</h1>	
+	</div>
+	
+</header>
+</div>
+
+<div class="checkoutpage">
+
+	<div class="cart_summary">
+	
+	<h3>Your order</h3>
+	
+	<table class="checkout-table">
+		
+	<thead>
+		<tr>
+			<th>Product</th>
+			<th>Size</th>
+			<th>Quantity</th>
+			<th>Price</th>
+			<th>Total</th>
+		</tr>
+	</thead>
+		
+	<tbody>
+		<tr>
+			<td>Contiur 2018</td>
+			<td>EU 43</td>
+			<td>1</td>
+			<td>£250</td>
+			<td>250</td>
+		</tr>
+		<tr>
+			<td>Burton Lexa White 2018</td>
+			<td>Large</td>
+			<td>1</td>
+			<td>£218</td>
+			<td>218</td>
+		</tr>
+		<tr>
+			<td>Black Diamond Mission Pants</td>
+			<td>XL</td>
+			<td>2</td>
+			<td>£280</td>
+			<td>560</td>
+		</tr>
+	</tbody>
+	<tfoot>
+		<tr>
+
+			<td colspan="4">Total</td>
+			<td>£1028</td>
+		</tr>
+		<tr>
+			
+			<td colspan="4">VAT</td>
+			<td>£257</td>
+		</tr>
+		<tr>
+			<td colspan="4">Order Total</td>
+			<td>£1028</td>
+		</tr>
+	</tfoot>
+	</table>
+	
+	</div>
+	
+	<div class="billing">
+	<h2>Billing and Shipping information</h2>
+	
+		<form class="billing-form" name="billing-form" onsubmit="purchase()" method="post">
+			Name:<br><input id="name" type="text" name="Name"><br>
+			Email:<br><input id="formEmail" type="text" name="email"><br>
+			Street adress:<br><input id="adress" type="text" name="streetadress"><br>
+			Zip code:<br><input id="zipcode" type="text" name="zipcode"><br>
+			City:<br><input id="city" type="text" name="city"><br>
+			<br>
+			<a href="index.html" class="regret submit">Regret and back to frontpage</a>
+			<input class="submit" type="submit" value="Fullfill your purchase">
+		</form>
+	
+	</div>
+
+</div>
+
+<footer id="footer">
+
+
+
+</footer>
+
+</body>
+</html>

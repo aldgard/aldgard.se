@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="assets/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!--<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>-->
+	<script src="assets/lifestylestore.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>LifeStyleStore.com</title>
+
+	<meta name="description" content="Buy new snowboardgear, read and checkout new fantastic blogs about snowboardning, find your next snowboardtravel all at the same place. This is LifeStyleStore where you can find almost everything you need in the life of a snowboarder.">
+</head>
+
+<body>
+
+<!-- navgation section with logo, main menu, cart -->
+<header>
+	<div class="logo">
+		<a href="index.html"><img src="files/logo.png" class="img_logo" alt="Company Logo"></a>
+	</div>
+	
+<div class="maintitle">
+		<h1>Welcome to LifeStyleStore.com</h1>	
+	</div>
+	
+	<div class="cart">
+		<h3>Shopping Cart</h3>
+		<p id="number_products">Your cart is empty</p><p id="after_product"></p>
+		<p class="price">0.00 SEK</p>
+		<button onclick="checkout_button()">Checkout</button>
+		
+	</div>
+		<nav id="navigation">
+			<ul>
+				<li><a href="#frontpage">Home</a></li>
+				<li><a href="#shop">Shop</a></li>
+				<li><a href="#blog">Blog</a></li>
+				<li><a href="#travel">Travel</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	
+	
+</header>
+
+<button onclick="topFunction()" id="myBtn" title="Back to top">Top</button>
+
+<main>
+
+<!-- section width images with smooth scrool down to specific anchor-->
+	<div id="frontpage">
+		<div class="frontpage_shop">
+			<a href="#shop"><img src="files/shop.jpg" class="img_frontpage" alt="Imagelink to shopping"></a>
+		</div>
+		
+		<div class="frontpage_blog">
+			<a href="#blog"><img src="files/blog.jpg" class="img_frontpage" alt="Imagelink to blog"></a>
+		</div>
+		
+		<div class="frontpage_travel">
+			<a href="#travel"><img src="files/travel.jpg" class="img_frontpage" alt="Imagelink to travel"></a>
+		</div>
+			
+	</div>
+	
+<!--shopping section. Four categories, four products in each category-->
+	<div id="shop">
+		<h1>Shop</h1>
+	
+	
+	<!-- ===BOOTS=== -->
+		<div class="shop_title">
+		<h2>Boots</h2>
+		</div>
+		<div class="shop_left">
+		
+			<div class="product">
+				<img src="files/products/boot1.jpg" class="img_product" alt="image boot 1">
+				<div class="attributes">
+					<select class="size" size="1">
+						<option>size EU 39</option>
+						<option>size EU 40</option>
+						<option>size EU 41</option>
+						<option>size EU 42</option>
+						<option>size EU 43</option>
+						<option>size EU 44</option>
+						<option>size EU 45</option>
+					</select>
+				</div>
+				<div class="describtion">
+					<h3>Contour 2018</h3>
+					<p>High-end materials matched with K2's top tier technology combine in the Contour boot. With a medium flex for go-anywhere versatility and the fit-on-the-fly adjustability of the Boa® Conda system, the Contour is the long lasting comfortable choice of the K2 Women’s Alliance team.</p>
+				</div>
+				
+				
+				
+				<div class="product_price">
+					<p>£250</p>
+				</div>
+				
+				<button onclick="add_product()">Add product</button>
+				
+			</div>
+		
+			<div class="product">
+				<img src="files/products/boot2.jpg" class="img_product" alt="image boot 2">
+				<div class="attributes">
+					<select class="size" size="1">
+						<option>size EU 39</option>
+						<option>size EU 40</option>
+						<option>size EU 41</option>
+						<option>size EU 42</option>
+						<option>size EU 43</option>
+						<option>size EU 44</option>
+						<option>size EU 45</option>
+					</select>
+				</div>
+				<div class="describtion">
+					<h3>Deemon PF 2018</h3>
+					<p>The Deemon is the go-to boot for many Deeluxe team riders. Young bucks and old schoolers alike find the perfect blend of comfort and response in its asymmetrical Custom Flex construction, C3 lacing, and Remedy outsole. A reinforced 3D tongue and optional TPS shield offer support. Throw down in style.</p>
+				</div>
+				
+				<div class="product_price">
+					<p>£270</p>
+				</div>
+				
+				<button onclick="add_product()">Add product</button>
+			
+			</div>
+			
+			<div class="product product_second">
+				<img src="files/products/boot3.jpg" class="img_product" alt="image boot 3">
+				<div class="attributes">
+					<select class="size" size="1">
+						<option>size EU 39</option>
+						<option>size EU 40</option>
+						<option>size EU 41</option>
+						<option>size EU 42</option>
+						<option>size EU 43</option>
+						<option>size EU 44</option>
+						<option>size EU 45</option>
+					</select>
+				</div>
+				<div class="describtion">
+					<h3>ID 6 3 Lara PF 2018</h3>
+					<p>Female-driven and park proven, the ID Lara blends crisp style with fresh technology. And despite its stealth appearance, the boot’s comfort and performance are immediately evident. The new Slytech One cushioning in the heel dampens hard impacts on icy landings or impassive terrain.</p>
+				</div>
+				
+				<div class="product_price">
+					<p>£320</p>
+				</div>
+				
+				<button onclick="add_product()">Add product</button>
+			</div>
+			
+			<div class="product product_second">
+				<img src="files/products/boot4.jpg" class="img_product" alt="image boot 4">
+				<div class="attributes">
+					<select class="size" size="1">
+						<option>size EU 39</option>
+						<option>size EU 40</option>
+						<option>size EU 41</option>
+						<option>size EU 42</option>
+						<option>size EU 43</option>
+						<option>size EU 44</option>
+						<option>size EU 45</option>
+					</select>
+				</div>
+				<div class="describtion">
+					<h3>Limelight Boa 2018</h3>
+					<p>With the Boa lacing system, you will be the first to hit the slopes with the secure fit to shred everything from glades to groomers. The women’s specific True fit design ensures a more harmonious connection because every element of this boot has been designed and engineered around women. Total Warmth is a one-two punch of a 3M™ Thinsulate™ insulated liner and Sleeping Bag heat-reflective foil. An overall soft and forgiving flex brings it all together in a boot that works with you to bring more fun and freedom to every run.</p>
+				</div>
+				
+				<div class="product_price">
+					<p>£230</p>
+				</div>
+				
+				<button onclick="add_product()">Add product</button>
+			</div>
+			
+		</div>
+		<!--===BINDINGS===-->
+		<div class="shop_title">
+			<h2>Bindings</h2>
+		</div>
+		<div class="shop_middle_left">
+		
+			<div class="product">
+				<img src="files/products/binding1.jpg" class="img_product" alt="image_binding1">
+				<div class="describtion">
+					<h3>NITRO IVY 2018</h3>
+					<p>Introducing the next level of performance and comfort – the Nitro IVY binding. Equipped with the STEALTH AIR baseplate so comfortably responsive it allows you to attack the entire mountain with the confidence you have always dreamed of. The Nitro Air Dampening and a 3° Canted Footbed provide you with so much support and comfort you will feel like you are strapped into your favourite pair of slippers while maintaining the highest level of response through the women´s Asym Highback. The stainless steel Cable Connectors will eliminate any wardrobe malfunctions on the hill and allow you to use these high-end bindings season after season because quality never goes out of style.</p>
+				</div>
+				<div class="product_price">
+					<p>£166</p>
+				</div>
+				
+				<button onclick="add_product()">Add product</button>
+				
+			</div>
+			
+			<div class="product">
+				<img src="files/products/binding2.jpg" class="img_product" alt="image_binding2">
+				<div class="attributes">
+					<select class="size" size="1">
+						<option>Medium</option>
+						<option>Large</option>
+					</select>
+				</div>
+				<div class="describtion">
+					<h3>BURTON LEXA 2018</h3>
+					<p>Offering legendary freestyle performance, it’s no wonder the Lexa is a top pick for a whole host of Burton (and non-Burton) pro riders. Double Take buckles with Insta-Click get you strapped in fast and dropping first. The <span class="bold_in_text">Asym Hammockstrap™</span> and <span class="bold_in_text">Super Grip Capstrap™</span> combined with a supportive Heel Hammock in the Highback cradles your boot so securely you can even run your straps a little looser. Experiment with the Highback's Zero Forward Lean for a more playful feel while treating your body right with the anatomical comfort of AutoCANT cushioning. True Fit™ means that every element of every piece of your setup has been designed and engineered for the way women ride. Because when it fits right, it rides better.</p>
+				</div>
+				<div class="product_price">
+					<p>£218</p>
+				</div>
+				
+				<button onclick="add_product()">Add product</button>
+			</div>
+			
+			<div class="product">
+				<img src="files/products/binding3.jpg" class="img_product" alt="image_binding3">
+				<div class="attributes">
+					<select class="size" size="1">
+						<option>Medium</option>
+						<option>Large</option>
+					</select>
+				</div>
+				<div class="describtion">
+					<h3>BURTON LEXA WHITE 2018</h3>
+					<p>Offering legendary freestyle performance, it’s no wonder the Lexa is a top pick for a whole host of Burton (and non-Burton) pro riders. Double Take buckles with Insta-Click get you strapped in fast and dropping first. The <span class="bold_in_text">Asym Hammockstrap™</span> and <span class="bold_in_text">Super Grip Capstrap™</span> combined with a supportive Heel Hammock in the Highback cradles your boot so securely you can even run your straps a little looser. Experiment with the Highback's Zero Forward Lean for a more playful feel while treating your body right with the anatomical comfort of AutoCANT cushioning. True Fit™ means that every element of every piece of your setup has been designed and engineered for the way women ride. Because when it fits right, it rides better.</p>
+				</div>
+				<div class="product_price">
+					<p>£218</p>
+				</div>
+				
+				<button onclick="add_product()">Add product</button>
+			</div>
+			
+			<div class="product">
+				<img src="files/products/binding4.jpg" class="img_product" alt="image_binding4">
+				<div class="attributes">
+					<select class="size" size="1">
+						<option>Small</option>
+						<option>Medium</option>
+						<option>Large</option>
+					</select>
+				</div>
+				<div class="describtion">
+					<h3>BURTON SCRIBE 2018</h3>
+					<p>Offering a multi-talented package for all-terrain fun, the Burton Scribe remains soft, flexible and responsive no matter what your riding style. Sitting at the sweet spot between power and playfulness, it’s like the laid-back cousin of the pro-level Lexa yet not quite as soft as the beginner-friendly Stiletto. With the Scribe, you’ll experience more underfoot flex than any competitor binding, plus cloud-like cushioning to soften every inch of the mountain. <span class="bold_in_text">True Fit™</span> means that every element of every piece of your setup has been designed and engineered for the way women ride. Because when it fits right, it rides better.</p>
+				</div>
+				<div class="product_price">
+					<p>£218</p>
+				</div>
+				
+				<button onclick="add_product()">Add product</button>
+			</div>
+			
+		</div>
+		
+		<!--===BOARDS===-->
+		<div class="shop_title">
+			<h2>Boards</h2>
+		</div>
+		<div class="shop_middle_right">
+		
+			<div class="product">
+				 <img src="files/products/board1.jpg" class="img_product" alt="image_board1">
+				 <div class="attributes">
+					<select class="size" size="1">
+						<option>145 cm, uni</option>
+						<option>147 cm, uni</option>
+						<option>150 cm, uni</option>
+						<option>154 cm, uni</option>
+					</select>
+					<div class="riding_style">
+						<p>Riding style:</p>
+						<ul>
+							<li>All Mountain</li>
+							<li>Jib</li>
+							<li>Advanced</li>
+						</ul>
+					</div>
+				</div>
+				<div class="describtion">
+					<h3>APERTURE COSMO 2018</h3>
+					<p>Explore the mountain with the all new Aperture Cosmo women's snowboard. Carve with ease because the twin shape and Hybrid Rocker offers a balanced yet playful ride, perfect for new or progressing riders. The Cosmo is designed for a fun and long-lasting ride.</p>
+				</div>
+				<div class="product_price">
+					<p>£218</p>
+				</div>
+				
+				<button onclick="add_product()">Add product</button>
+			</div>
+			<div class="product">
+				<img src="files/products/board2.jpg" class="img_product" alt="image_board2">
+				<div class="attributes">
+					<select class="size" size"1">
+						<option>147 cm, uni</option>
+					</select>
+					<div class="riding_style">
+						<p>Riding style:</p>
+						<ul>
+							<li>Jib</li>
+							<li>Freestyle</li>
+						</ul>
+					</div>
+				</div>
+				<div class="describtion">
+					<h3>VIMANA ENNITIME 2018</h3>
+					<p>Vimana built the Ennitime in collaboration with Enni Rukajärvi. Enni is a true ripper and wanted her series to be able to shred every terrain in every condition. That is why she switched up the profile for different lengths: the 143 and 147 features a traditional camber profile with true twin shape to rip kickers, rails, and jibs. The 151 and 153 feature a rocker profile with a directional shape to slash around in the backcountry.</p>
+				</div>
+				<div class="product_price">
+					<p>£394</p>
+				</div>
+				<button onclick="add_product()">Add product</button>
+			</div>
+			<div class="product">
+				<img src="files/products/board3.jpg" class="img_product" alt="image_board3">
+				<div class="attributes">
+					<select class="size" size="1">
+						<option>144 cm, uni</option>
+						<option>149 cm, uni</option>
+						<option>150 cm, uni</option>
+						<option>152 cm, uni</option>
+					</select>
+					<div class="riding_style">
+						<p>Riding style:</p>
+						<ul>
+							<li>Freestyle</li>
+							<li>Freeride</li>
+							<li>All Mountain</li>
+						</ul>
+					</div>
+				</div>
+				<div class="describtion">
+					<h3>BURTON FEELGOOD FLYING V</h3>
+					<p>Confidence inspiring in every condition! The control of Camber meets the catch-free feeling of Rocker in a board so confident it makes you feel like anything is possible. Backed by Kelly Clark, the <span class="bold_in_text">Burton Feelgood Flying V™</span> is the defining force in women's snowboarding. Carbon Highlights are the biggest bonus, shaving serious weight while making the board more playful and lively from tip to tail. Squeezebox High core profiling also utilises carbon to reduce weight even further and makes the board more poppy and precise for Ferrari-like handling. The directional shape navigates easily through variable conditions. Available with the stable suspension of camber or the rocker-infused freedom of <span class="bold_in_text">Flying V™</span>, it's a perfect match for aspiring pros or just riders who thrive on a little friendly competition.</p>
+				</div>
+				<div class="product_price">
+					<p>£437</p>
+				</div>
+				<button onclick="add_product()">Add product</button>
+			</div>
+			<div class="product">
+				<img src="files/products/board4.jpg" class="img_product" alt="image_board4">
+				<div class="attributes">
+					<select class="size" size="1">
+						<option>142 cm, black</option>
+						<option>146 cm, black</option>
+						<option>150 cm, black</option>
+						<option>154 cm, black</option>
+					</select>
+				</div>
+				<div class="riding_style">
+					<p>Riding style:</p>
+					<ul>
+						<li>Freeride</li>
+						<li>All Mountain</li>
+					</ul>
+				</div>
+				<div class="describtion">
+					<h3>RIDE SATURDAY 2018</h3>
+					<p>The Saturday by Ride has everything to make a great day on the hill even better. The Twin Hybrid Rocker is combined with a medium flex for a board that allows you to get wild and crazy in every terrain. The shape and profile offer a lot of float and versatility for the steepest and deepest lines you can find. Every day is Saturday when you’re on the mountain.</p>
+				</div>
+				<div class="product_price">
+					<p>£342</p>
+				</div>
+				<button onclick="add_product()">Add product</button>
+			</div>
+		</div>
+		
+		
+		<!--===CLOTHES===-->
+		
+		<div class="shop_title">
+			<h2>Clothes</h2>
+		</div>
+		
+		<div class="shop_right">
+		
+			<div class="product">
+				<img src="files/products/jacket1.jpg" class="img_product" alt="img clothes1">
+				<div class="attributes">
+					<select class="size" size"1">
+						<option>S</option>
+						<option>M</option>
+						<option>L</option>
+						<option>XL</option>
+					</select>
+					<div class="features">
+						<p>Snowwear Features:</p>
+						<ul>
+							<li>GORE-TEX®</li>
+							<li>Jacket-to-pant connection</li>
+							<li>Stretch wrist Gaiters</li>
+							<li>Snow skirt</li>
+							<li>all seams sealed</li>
+						</ul>
+					</div>
+				</div>
+				<div class="describtion">
+					<h3>BURTON AK 2L SWASH JACKET</h3>
+					<p>As one of the smartest jackets in snowboarding, the Burton [ak] GORE-TEX® 2L Swash Jacket’s PrimaLoft® insulation is like a built-in vest, focusing warmth around your core while leaving your arms light and free for the movements of sledding, shoveling, and riding. High-tech in every respect, the Swash is fully sealed against wind and water with GORE-SEAM® tape, and is equipped with a lightweight, down-proof lining for ramped-up wicking and breathability. Additional features like adjustable Powder Gasket Cuffs, a water-repellent waist gaiter, and water-resistant zippers make this the one to wear when the weather sends the rest running for cover.</p>
+				</div>
+				<div class="product_price">
+					<p>£316<p>
+				</div>
+				<button onclick="add_product()">Add product</button>
+			</div>
+			<div class="product">
+				<img src="files/products/jacket2.jpg" class="img_product" alt="img clothes2">
+				<div class="attributes">
+					<select class="size" size"1">
+						<option>S</option>
+						<option>M</option>
+						<option>L</option>
+						<option>XL</option>
+					</select>
+					<div class="features">
+						<p>Snowwear Features:</p>
+						<ul>
+							<li>Snow skirt</li>
+							<li>Adjustable cuffs</li>
+							<li>Critically sealed seams</li>
+							<li>Hand warmer pockets</li>
+							<li>Media pocket</li>
+							<li>Jacket-to-pant connection</li>
+						</ul>
+					</div>
+				</div>
+				<div class="describtion">
+					<h3>HORSEFEATHERS KANGRI JACKET</h3>
+					<p>The Kangri Jacket from Horsefeathers is a classically designed winter jacket. It offers practical details and features and has first rate functionality. It is equipped with Ultratech fabric, a laminated membrane as well as a C6 DWR system designed to keep you dry. Additionally, you get a warm nylon fabric for the liner, even in the pocketsThe Kangri includes a tonne of other handy features such as a jacket-pant connection system, critically taped seams, a convenient media pocket and so much more. The regular fit will keep you looking stylish and comfortable too.</p>
+				</div>
+				<div class="product_price">
+					<p>£79</p>
+				</div>
+				<button onclick="add_product()">Add product</button>
+			</div>
+			<div class="product">
+				<img src="files/products/pants1.jpg" class="img_product" alt="clothes3">
+				<div class="attributes">
+					<select class="size" size"1">
+						<option>S</option>
+						<option>M</option>
+						<option>L</option>
+						<option>XL</option>
+					</select>
+					<div class="features">
+						<p>Snowwear Features:</p>
+						<ul>
+							<li>Critically sealed seams</li>
+							<li>Waterproof zippers</li>
+							<li>RECCO reflector</li>
+							<li>GORE-TEX®</li>
+							<li>Boot gaiter</li>
+							<li>Stretch wrist gaiters</li>
+							<li>Reinforced cuffs</li>
+							<li>Venting system</li>
+						</ul>
+					</div>
+				</div>
+				<div class="describtion">
+					<h3>BLACK DIAMOND MISSION PANTS</h3>
+					<p>Built for everything from double-digit storm days spent lapping the tram to bluebird backcountry tours out the gate, the Mission Pants are Black Diamond's fully featured, do-it-all ski pants featuring GORE-TEX fabric for absolute waterproof and breathable protection.</p>
+				</div>
+				<div class="product_price">
+					<p>£280</p>
+				</div>
+				<button onclick="add_product()">Add product</button>
+			</div>
+			<div class="product">
+				<img src="files/products/pants2.jpg" class="img_product" alt="clothes4">
+				<div class="attributes">
+					<select class="size" size"1">
+						<option>XS</option>
+						<option>S</option>
+						<option>M</option>
+						<option>L</option>
+						<option>XL</option>
+					</select>
+					<div class="features">
+						<p>Snowwear Features:</p>
+						<ul>
+							<li>Adjustable cuffs</li>
+							<li>All seams sealed</li>
+							<li>Jacket-to-pant connection</li>
+							<li>Boot gaiter</li>
+							<li>Venting system</li>
+						</ul>
+					</div>
+				</div>
+				<div class="describtion">
+					<h3>DC VIVA PANTS</h3>
+					<p>A one-of-a-kind denim inspired, tailored fit pair of snowboard pants you shouldn't miss out. The Weather Defense construction with a 15,000 mm water column and fully taped seams are a protection shield against moisture and will keep you dry in any weather condition. A soft taffeta lining will keep you warm when the temperatures drop. In the case you're getting too warm after some hot shreds, you can use the mesh venting system to cool down again. Several convenient pockets will give you enough space for all your important belongings. In short: with the Viva snowboard pants you won't miss anything on a long shred day on the mountain.</p>
+				</div>
+				<div class="product_price">
+					<p>£132</p>
+				</div>
+				<button onclick="add_product()">Add product</button>
+			</div>
+		</div>
+	
+	
+	</div>
+	
+<!--
+		=== Blogs ===
+-->	
+	<div id="blog">
+		<h1>Blog</h1>
+	
+		<div class="blog_box">
+			<h2>OnboardMag</h2>
+			<img class="blog_photo" src="files/blog/onboardmag.jpg" alt="Onboard Magazine">
+				<div class="feed">
+					<script type="text/javascript" src="http://output83.rssinclude.com/output?type=js&amp;id=1186508&amp;hash=c415911038b20d02d87b74174b56e9bf"></script>
+				</div>
+			<p>Here you will find the latest snowboarding videos, news, photos and snowboarding products from Onboard Snowboarding.</p>
+			<p><span class="bold_in_text">Frequency</span> - about 5 posts per week </p>
+			</div>
+		
+		<div class="blog_box">
+			<h2>Snowboard Addiction</h2>
+			<img class="blog_photo" src="files/blog/snowboardaddiction.jpg" alt="Snowboard Addiction">
+				<div class="feed">
+					<script type="text/javascript" src="http://output64.rssinclude.com/output?type=js&amp;id=1186509&amp;hash=b0c80367576503c15b4621385d4dd33c"></script>
+				</div>
+			
+			<p> Learn how to snowboard with the world's best how to snowboard tutorials (beginner to advanced). Free video lessons, trick tips, training board, balance bar. We teach you how to snowboard, through training products and online tutorials. Our Goals is to Improve Your Riding .</p>
+			<p><span class="bold_in_text">Frequency</span> - about 3 posts per month</p>
+	
+		</div>
+
+		
+		<div class="blog_box">
+			<h2>RideSnowboards</h2>
+			<img class="blog_photo" src="files/blog/ride.jpg" alt="Ride Snowboard">
+				<div class="feed">
+					<script type="text/javascript" src="http://output15.rssinclude.com/output?type=js&amp;id=1186511&amp;hash=9b3feb445a619ca2522d544890b9f678"></script>
+				</div>
+			<p>Ride offers innovative team inspired collections of snowboards, boots, bindings, and outerwear for every type of rider. Here you will find all the latest ride snowboards news.</p>
+			<p><span class="bold_in_text">Frequency</span> - about 3 posts per month</p>
+	
+		</div>
+		
+		<div class="blog_box">
+			<h2>Snowboard Canada</h2>
+			<img class="blog_photo" src="files/blog/snowboardcanada.jpg" alt="Snowboard Canada">
+			<div class="feed">
+				<script type="text/javascript" src="http://output90.rssinclude.com/output?type=js&amp;id=1186512&amp;hash=3c7b34bc992f007fea4e3363833c6665"></script>
+			</div>
+			<p>Snowboard Canada Magazine is just one of the amazing action-sports media titles under the SBC Media Brand. SBC is woven into the fabric of skateboarding, snowboarding, skiing, wakeboarding and action sports across Canada. Our vision and leadership will ensure athletes, content producers and brands continue to have a prestigious national, multi-media platform to showcase their sports lifestyle.</p>
+			<p><span class="bold_in_text">Frequency</span> - about 1 post per week</p>
+	
+		</div>
+	
+	
+	</div>
+	
+
+<!--Section with traveltips. Links to external site-->	
+	
+	<div id="travel">
+		<h1>Travel</h1>
+	
+	<div class="travel_col">
+		<img name="travel1" class="travel_img" alt="travel images">
+		<div class="describtion">
+			<h3>Whistler</h3>
+			<p class="country">Canada</p>
+			<h4>Info</h4>
+			<p class="info">Whistler resort is rightly considered to be one of the hottest ski resorts in the world. Whistler is located in the Costal Mountains mountain range in a very beautiful setting. The town has a long history dating back to 1877 when the railroad was merged there. The city has also hosted the 2010 Olympic Winter Games.</p>
+			<ul class="infoList">
+				<li>Total Slope Length: 216 km</li>
+				<li>Longest Slope: 11 km</li>
+				<li>Transfer time: 120 min</li>
+				<li>Highets Peak: 2284 m.a.s.l</li>
+				<li>Number of lifts: 33</li>
+			</ul>
+			
+			<a href="https://www.activeski.se/assets/archive/images/destinationer/canada/whistler/pistkarta/Whistler-Blackcomb-Piste-Map-Large.jpg">Trail map</a>
+			
+		</div>
+		<div class="product_price">
+		
+		</div>
+		<button onclick="book()" class="booking_button">Book your visit</button>
+	</div>
+	
+	<div class="travel_col">
+		<img name="travel2" class="travel_img" alt="travel images">
+		<div class="describtion">
+			<h3>Davos</h3>
+			<p class="country">Switzerland</p>
+			<h4>Info</h4>
+			<p class="info">Davos is Europe's highest city and has everything one could wish for from a ski resort. The 5 different lifts that you easily get between form a superb ski area with a wide range of slopes and fantastic possibilities for off-piste skiing.</p>
+			<ul class="infoList">
+				<li>Total Slope Length: 310 km</li>
+				<li>Longest Slope: 12 km</li>
+				<li>Transfer time: 150 min</li>
+				<li>Highets Peak: 2844 m.a.s.l</li>
+				<li>Number of lifts: 49</li>
+			</ul>
+			
+			<a href="https://www.activeski.se/assets/archive/images/destinationer/schweiz/davos%20klosters/pistkarta/Pistkarta_Davos_right.jpg">Trail map</a>
+		</div>
+		<div class="product_price">
+		
+		</div>
+		<button onclick="book()" class="booking_button">Book your visit</button>
+	</div>
+	
+	<div class="travel_col">
+		<img name="travel3" class="travel_img" alt="travel images">
+		<div class="describtion">
+			<h3>St Anton</h3>
+			<p class="country">Austria</p>
+			<h4>Info</h4>
+			<p class="info">In St. Anton, one of the absolute best skiing systems in the Alps is one of Europe's most snow-capped resorts. St. Anton is a real good ski resort with a cruel offpiste, a large and varied piste system and many cozy restaurants and bars. If you are looking for a party there is of course a really good entertainment life. St. Anton is the perfect ski resort for boys or girls where you combine cruel skiing with the Alps' best après ski. But St Anton is also suitable for families and conference trips.</p>
+			<ul class="infoList">
+				<li>Total Slope Length: 280 km</li>
+				<li>Longest Slope: 10,8 km</li>
+				<li>Transfer time: 150 min</li>
+				<li>Highets Peak: 2811 m.a.s.l</li>
+				<li>Number of lifts: 37</li>
+			</ul>
+			
+			<a href="https://www.activeski.se/assets/archive/images/destinationer/osterrike/St-Anton/pistkarta/Pistkarta_St_Anton.jpg">Trail map</a>
+			
+		</div>
+		<div class="product_price">
+		</div> 
+		<button onclick="book()" class="booking_button">Book your visit</button>
+	</div>
+	
+	<div class="travel_col">
+		<img name="travel4" class="travel_img" alt="travel images">
+		<div class="describtion">
+			<h3>Zermatt</h3>
+			<p class="country">Switzerland</p>
+			<h4>Info</h4>
+			<p class="info">At the foot of the Toblerone mountain Matterhorn is one of Europe's best ski areas, Zermatt / Cervinia a total of 350 km of piste and something for everyone. Wide slopes, most parks, puckles and controlled offpiste. Outside the piste there is a lot to choose from, slopes in all directions mean that they can often find untouched snow. Zermatt's most spectacular off-piste yard is Schwarztor, after rounding Breithorn awaits a long offpiste ride over Schwartzglacier down to Furi. The view from the ski area is fantastic, nowhere else in the Alps can you see as many peaks over 4,000 meters at the same time.</p>
+			<ul class="infoList">
+				<li>Total Slope Length: 350 km</li>
+				<li>Longest Slope: 20 km</li>
+				<li>Transfer time: 220 min</li>
+				<li>Highets Peak: 3883 m.a.s.l</li>
+				<li>Number of lifts: 54</li>
+			</ul>
+			
+			<a href="https://www.activeski.se/assets/archive/images/destinationer/schweiz/Zermatt/Pistkarta/pistkarta%20ny_zermatt.jpg">Trail map</a>
+			
+		</div>
+		<div class="product_price">
+		
+		</div>
+		<button onclick="book()" class="booking_button">Book your visit</button>
+		
+	</div>
+	
+	
+	
+	
+	</div>
+
+
+</main>
+
+<footer id="footer">
+	<div class="footer_left">
+		<h3>Terms and Conditions</h3>
+		<p>The terms and conditions are simple. You order from us, we deliver to you in the next three to four days. Except on days we're out of office, wich might be any snowy day or like christmas. If a parsell is missing, it's not our fault but we will help you find it to no charge. If a parsell is damage, it's not either our fault but we will punish the delivery services with the backside of our boards. If you don't pay the bill we send, well just don't forget it. Everything is so much more easy then.</p>
+	</div>
+
+	<div class="footer_middle">
+		<h3>About</h3>
+		<p>We are a pop-up store that focusing on snowboarding and the lifestyle that belongs to it.</p>
+		<p>Our goal is that when you come to this site you will find everything you need to live your life as a snowboarder.</p>
+		<p>Except snow and hills of course, and jibs, and airtime....</p>
+	</div>
+
+	<div class="footer_right">
+		<h3>Contact us</h3>
+	 <a class="footerLinks" href="contact.html">
+		<img class="icons" src="files/icons/mail.png">
+		<img class="icons" src="files/icons/phone.png">
+		<img class="icons" src="files/icons/location.png">
+	</a>
+	</div>
+
+
+</footer>
+
+</body>
+</html>

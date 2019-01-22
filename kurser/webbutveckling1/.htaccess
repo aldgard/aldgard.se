@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "webbutveckling1"
+AuthUserFile "/home/aldgard/.htpasswds/public_html/kurser/webbutveckling1/passwd"
+require valid-user

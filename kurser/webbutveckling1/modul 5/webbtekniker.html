@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+		<head>
+			<meta charset="utf-8"> <!-- för att få svenska tecken -->
+				<title>Tobias Aldgård - Redovisning modul 5</title> <!-- titlen för hemsidan -->
+			<link rel="stylesheet" href="assets/style.css"><!-- css styling dokument-->	
+			<link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		</head>
+	
+<body>
+
+	<div id="contentWrapper">
+	
+		<div id="header">
+		
+			<h1>Redovisning modul 5</h1>
+		
+		</div>
+	
+		<div id="mainMenu">
+			
+			<ul>
+		
+				<li><a href="index.html">Start</a></li>
+				<li><a href="presentation.html">Presentation</a></li>
+				<li><a href="internetshistoria.html">Internets historia</a></li>
+				<li><a href="instagramupploppen.html">Instagramupploppen</a></li>
+				<li><a href="webbtekniker.html">Webbtekniker</a></li>
+				<li><a href="kontaktaMig.html">Kontakta mig</a></li>
+			
+			</ul>
+			
+		</div>
+		
+		<div id="subMenu">
+		
+			<ul>
+				<li><a href="beskrivninghtml.html">HTML</a></li>
+				<li><a href="beskrivningcss.html">CSS</a></li>
+				<li><a href="beskrivningjs.html">JavaScript</a></li>
+			</ul>
+		
+		</div>
+		
+		
+		<div class="fader">
+		
+		
+		<div class="title">
+		
+			<h2>Webbtekniker</h2>
+		
+		</div>
+		
+		
+			
+		<div class="text">
+			
+			<p>Det är lätt att tro att allt som händer på en hemsida löser sig lite av sig själv. Lite som när man loggar in på Windows och tror att man bara öppnat datorn och inga program. Det finns saker som pågår i kulisserna. Framför allt så är allt innehåll på en hemsida skapat av någon. Jag tänkte jag skulle förklara lite hur det fungerar.</p>
+			<p>En hemsida består av olika koder i olika dokument. Varje dokument har en filändelse som berättar vilket språk det är skrivet på. Med språk menar jag inte svenska, engelska eller så, utan kodspråk.</p>
+			<p>Där finns olika språk som arbetar ihop för att få fram den hemsida som skaparen önskar. Jag jämför dem lite med ett hus för att få en översikt på det.</p>
+			<a class="webbtekniklink" href="beskrivninghtml.html"><p>HTML är som själva byggnaden. Det som bygger upp strukturen på hemsidan.</p></a>
+			<a class="webbtekniklink" href="beskrivningcss.html"><p>CSS är inredningsdesignen. Den hjälper till att visa huset från sin bästa sida.</p></a>
+			<a class="webbtekniklink" href="beskrivningjs.html"><p>JavaScript är visningsguiden som tar viss HTML och viss CSS och presenterar det i en upplevelse. Eller som interagerar med dina fotsteg i huset.</p></a>
+			<p>Sen finns det fler språk man kan använda sig utav för att göra mer avancerade hemsidor. Men de går jag inte igenom i det här arbetet.</p>
+			<p>Jag kommer under varje språk förklara mer hur man använder det och vad det gör på hemsidan. Om du följer varje steg så kan du efter du läst detta skapa en egen enkel hemsida. Under varje språk finns även exempelkoder för hur man använder språket.</p>
+				
+		</div>	
+			
+			
+			
+			
+			
+		</div>
+		
+		<div class="footer">
+		
+			<div class="footerLeft">
+			
+				<p>sitemap</p>
+					<ul>
+					<li>Start</li>
+					<li>Presentation</li>
+					<li>Internetshistoria & Samhällspåverkan
+						<ul>
+						<li>Historia</li>
+						<li>Nutid</li>
+						<li>Dåtid</li>
+						</ul>
+					</li>
+					<li>Instagram upploppen i Göteborg 2012</li>
+					<li>Webbtekniker</li>
+					<li>Kontakta Mig
+						<ul>
+						<li>Tack.html</li>
+						</ul>
+					</li>				
+					</ul>
+			
+			</div>
+			
+			<div class="footerMiddle">
+			
+			<p>©Tobias Aldgård 2017</p>
+			
+			</div>
+			
+			<div class="footerRight">
+			
+			<a href="mailto:tobias.aldgard@telia.com?Subject=Kontakt" target="_top">Mejla mig genom att klicka här</a>
+			
+			</div>
+		
+		</div>
+	
+	
+	
+	</div>
+<script>
+$(document).ready(function(){
+$(".fader").css("display", "none");
+$(".fader").fadeIn(1000);
+$("a").click(function(event){
+event.preventDefault();
+linkLocation = this.href;
+$(".fader").fadeOut(1000, redirectPage);
+});
+function redirectPage() {
+window.location = linkLocation;
+}
+});
+</script>	
+</body>
+
+</html>

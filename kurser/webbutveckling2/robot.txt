@@ -1,0 +1,5 @@
+User-Agent:*
+
+Disallow:
+/thankyou.html
+/checkout.hmtl
