@@ -42,7 +42,8 @@ h2{
 .linkBox{
 	margin: 10px auto;
 	text-align: center;
-	float: left;
+	display: inline-block;
+	
 	
 }
 
